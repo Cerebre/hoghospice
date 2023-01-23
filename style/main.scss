@@ -127,7 +127,7 @@ nav {
 #hero {
     min-height: 90vh;
     display: grid;
-    place-items: center;
+    place-items: end;
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../assets/images/Home\ Page\ hero\ image.png');
     background-size: cover;
     background-repeat: none;
