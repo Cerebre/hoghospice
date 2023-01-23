@@ -138,6 +138,10 @@ nav {
         min-height: 100vh;
     }
 
+    @media screen and (max-width: 1024px) {
+        min-height: 90vh;
+    }
+
     // Oragnizations Number Style
     .org-number-container {
         position: relative;
@@ -625,7 +629,11 @@ nav {
     color: #FFFFFF;
 
     @media screen and (max-width: 1440px) {
-        min-height: 75vh;
+        min-height: 85vh;
+    }
+
+    @media screen and (max-width: 1024px) {
+        min-height: 70vh;
     }
 
     .body-small-semibold {

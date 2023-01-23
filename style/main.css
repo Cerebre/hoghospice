@@ -336,6 +336,12 @@ nav .container .menu .menu-list .menu-list-item .menu-button {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  #hero {
+    min-height: 90vh;
+  }
+}
+
 #hero .org-number-container {
   position: relative;
 }
@@ -872,7 +878,13 @@ nav .container .menu .menu-list .menu-list-item .menu-button {
 
 @media screen and (max-width: 1440px) {
   #join-hero {
-    min-height: 75vh;
+    min-height: 85vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  #join-hero {
+    min-height: 70vh;
   }
 }
 
