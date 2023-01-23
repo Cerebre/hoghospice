@@ -226,7 +226,7 @@ nav {
   padding: 54px 0;
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1200px) {
   nav {
     padding: 27px;
   }
@@ -754,6 +754,12 @@ nav .container .menu .menu-list .menu-list-item .menu-button {
   position: relative;
 }
 
+@media screen and (max-width: 1200px) {
+  .our-story .video-container {
+    height: 500px;
+  }
+}
+
 @media screen and (max-width: 500px) {
   .our-story .video-container {
     height: 300px;
@@ -873,6 +879,12 @@ nav .container .menu .menu-list .menu-list-item .menu-button {
   width: 100%;
   border-radius: 10px;
   text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .benefits .custom-card {
+    height: 250px;
+  }
 }
 
 .benefits .custom-card .custom-card-img {

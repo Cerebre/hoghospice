@@ -59,7 +59,7 @@ nav {
     width: 100%;
     padding: 54px 0;
 
-    @media screen and (max-width: 1440px) {
+    @media screen and (max-width: 1200px) {
         padding: 27px;
 
         .container {
@@ -520,6 +520,10 @@ nav {
         justify-content: center;
         position: relative;
 
+        @media screen and (max-width: 1200px) {
+            height: 500px;
+        }
+
         @media screen and (max-width: 500px) {
             height: 300px;
         }
@@ -631,6 +635,10 @@ nav {
         width: 100%;
         border-radius: 10px;
         text-align: center;
+
+        @media screen and (max-width: 1200px) {
+            height: 250px;
+        }
 
         .custom-card-img {
             position: absolute;
