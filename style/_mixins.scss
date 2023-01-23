@@ -1,0 +1,236 @@
+// Display Fonts Declaration
+@mixin display-base {
+    font-size: 56px;
+    line-height: 110%;
+}
+
+@mixin display-base-regular {
+    @include display-base();
+    font-weight: 400;
+}
+
+@mixin display-base-semibold {
+    @include display-base();
+    font-weight: 600;
+}
+
+@mixin display-base-bold {
+    @include display-base();
+    font-weight: 700;
+}
+
+// Heading One Font Declarations
+@mixin heading-one {
+    font-size: 48px;
+    line-height: 110%;
+}
+
+@mixin heading-one-regular {
+    @include heading-one();
+    font-weight: 400;
+}
+
+@mixin heading-one-semibold {
+    @include heading-one();
+    font-weight: 600;
+}
+
+@mixin heading-one-bold {
+    @include heading-one();
+    font-weight: 700;
+}
+
+// Heading two Font Declarations
+@mixin heading-two {
+    font-size: 40px;
+    line-height: 110%;
+}
+
+@mixin heading-two-regular {
+    @include heading-two();
+    font-weight: 400;
+}
+
+@mixin heading-two-semibold {
+    @include heading-two();
+    font-weight: 600;
+}
+
+@mixin heading-two-bold {
+    @include heading-two();
+    font-weight: 700;
+}
+
+// Heading three Font Declarations
+@mixin heading-three {
+    font-size: 32px;
+    line-height: 130%;
+}
+
+@mixin heading-three-regular {
+    @include heading-three();
+    font-weight: 400;
+}
+
+@mixin heading-three-semibold {
+    @include heading-three();
+    font-weight: 600;
+}
+
+@mixin heading-three-bold {
+    @include heading-three();
+    font-weight: 700;
+}
+
+// Heading four Font Declarations
+@mixin heading-four {
+    font-size: 28px;
+    line-height: 130%;
+}
+
+@mixin heading-four-regular {
+    @include heading-four();
+    font-weight: 400;
+}
+
+@mixin heading-four-semibold {
+    @include heading-four();
+    font-weight: 600;
+}
+
+@mixin heading-four-bold {
+    @include heading-four();
+    font-weight: 700;
+}
+
+// Heading five Font Declarations
+@mixin heading-five {
+    font-size: 24px;
+    line-height: 130%;
+}
+
+@mixin heading-five-regular {
+    @include heading-five();
+    font-weight: 400;
+}
+
+@mixin heading-five-semibold {
+    @include heading-five();
+    font-weight: 600;
+}
+
+@mixin heading-five-bold {
+    @include heading-five();
+    font-weight: 700;
+}
+
+// Heading six Font Declarations
+@mixin heading-six {
+    font-size: 20px;
+    line-height: 160%;
+}
+
+@mixin heading-six-regular {
+    @include heading-six();
+    font-weight: 400;
+}
+
+@mixin heading-six-semibold {
+    @include heading-six();
+    font-weight: 600;
+}
+
+@mixin heading-six-bold {
+    @include heading-six();
+    font-weight: 700;
+}
+
+// Body Large Font Declaration
+@mixin body-large {
+    font-size: 18px;
+    line-height: 160%;
+}
+
+@mixin body-large-regular {
+    @include body-large();
+    font-weight: 400;
+}
+
+@mixin body-large-semibold {
+    @include body-large();
+    font-weight: 600;
+}
+
+@mixin body-large-bold {
+    @include body-large();
+    font-weight: 700;
+}
+
+// Body base Font Declaration
+@mixin body-base {
+    font-size: 16px;
+    line-height: 160%;
+}
+
+@mixin body-base-regular {
+    @include body-base();
+    font-weight: 400;
+}
+
+@mixin body-base-semibold {
+    @include body-base();
+    font-weight: 600;
+}
+
+@mixin body-base-bold {
+    @include body-base();
+    font-weight: 700;
+}
+
+// Body small Font Declaration
+@mixin body-small {
+    font-size: 14px;
+    line-height: 160%;
+}
+
+@mixin body-small-regular {
+    @include body-small();
+    font-weight: 400;
+}
+
+@mixin body-small-semibold {
+    @include body-small();
+    font-weight: 600;
+}
+
+@mixin body-small-bold {
+    @include body-small();
+    font-weight: 700;
+}
+
+// Caption Font Declaration
+@mixin caption-base {
+    font-size: 12px;
+    line-height: 160%;
+}
+
+@mixin caption-base-regular {
+    @include caption-base();
+    font-weight: 400;
+}
+
+@mixin caption-base-semibold {
+    @include caption-base();
+    font-weight: 600;
+}
+
+@mixin caption-base-bold {
+    @include caption-base();
+    font-weight: 700;
+}
+
+// Effects Styles
+@mixin primary-button-shadow {
+    background: #D9D9D9;
+    box-shadow: 0px 15px 25px rgba(210, 174, 109, 0.05);
+}
