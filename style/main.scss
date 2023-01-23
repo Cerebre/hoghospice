@@ -134,6 +134,10 @@ nav {
     background-size: cover;
     background-repeat: none;
 
+    @media screen and (max-width: 1440px) {
+        min-height: 100vh;
+    }
+
     // Oragnizations Number Style
     .org-number-container {
         position: relative;
@@ -619,6 +623,10 @@ nav {
     display: grid;
     place-items: end;
     color: #FFFFFF;
+
+    @media screen and (max-width: 1440px) {
+        min-height: 75vh;
+    }
 
     .body-small-semibold {
         text-transform: uppercase;
