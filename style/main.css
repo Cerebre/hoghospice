@@ -226,6 +226,15 @@ nav {
   padding: 54px 0;
 }
 
+@media screen and (max-width: 1440px) {
+  nav {
+    padding: 27px;
+  }
+  nav .container {
+    height: 32px;
+  }
+}
+
 nav .container {
   height: 52px;
   display: -webkit-box;
