@@ -1,3 +1,7 @@
+nav {
+  position: relative;
+}
+
 nav .container .menu .menu-list .menu-list-item .menu-link {
   color: var(--foundation-grey-400);
 }

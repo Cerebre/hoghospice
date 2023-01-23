@@ -226,7 +226,7 @@ nav {
   padding: 54px 0;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   nav {
     padding: 27px;
   }
@@ -242,7 +242,7 @@ nav .container {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   nav .container {
     height: 32px;
   }
@@ -884,7 +884,7 @@ nav .container .menu .menu-list .menu-list-item .menu-button {
   text-align: center;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1440px) {
   .benefits .custom-card {
     height: 250px;
   }
