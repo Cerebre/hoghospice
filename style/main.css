@@ -230,9 +230,6 @@ nav {
   nav {
     padding: 27px;
   }
-  nav .container {
-    height: 32px;
-  }
 }
 
 nav .container {
@@ -243,6 +240,12 @@ nav .container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+@media screen and (max-width: 1200px) {
+  nav .container {
+    height: 32px;
+  }
 }
 
 nav .container .logo {
