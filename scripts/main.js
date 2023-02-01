@@ -41,3 +41,56 @@ buttons.forEach((button) => {
     });
   });
 });
+
+const barControl = document.querySelector('.bars');
+const bodyElement = document.querySelector('body');
+
+barControl.addEventListener('click', function () {
+  this.classList.toggle('active');
+  if (this.classList.contains('active')) {
+    gsap.to('.bar-one', {
+      rotate: '45deg',
+      top: '50%',
+      y: '-50%',
+      transformOrigin: 'center',
+    });
+    gsap.to('.bar-three', {
+      rotate: '-45deg',
+      top: '50%',
+      y: '-50%',
+      transformOrigin: 'center',
+    });
+    gsap.to('.bar-two', {
+      scale: '0',
+      // opacity: 0,
+    });
+    gsap.to('.menu', {
+      right: '0',
+    });
+    gsap.to('body', {
+      overflow: 'hidden',
+    });
+  } else {
+    gsap.to('.bar-one', {
+      rotate: '0deg',
+      top: '25%',
+      y: '0%',
+      transformOrigin: 'center',
+    });
+    gsap.to('.bar-three', {
+      rotate: '0deg',
+      top: '75%',
+      y: '-75%',
+      transformOrigin: 'center',
+    });
+    gsap.to('.bar-two', {
+      scale: '1',
+    });
+    gsap.to('.menu', {
+      right: '-100%',
+    });
+    gsap.to('body', {
+      overflow: 'scroll',
+    });
+  }
+});

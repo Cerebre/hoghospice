@@ -10,354 +10,397 @@
     <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style/main.css">
-    <link rel="stylesheet" href="style/override.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar Section -->
-    <nav>
-        <div class="container">
-            <div class="logo">
-                <a href="/">
-                    <img src="/assets/images/hoghospice logo.png" alt="Heart OF Gold's Logo" class="img-fluid">
-                </a>
-            </div>
-            <div class="menu">
-                <ul class="menu-list">
-                    <li class="menu-list-item"><a href="/" class="menu-link">Home</a></li>
-                    <li class="menu-list-item"><a href="/about.html" class="menu-link active">About us</a></li>
-                    <li class="menu-list-item"><a href="/volunteer.html" class="menu-link">Volunteer</a></li>
-                    <li class="menu-list-item"><a href="" class="menu-link">Gallery</a></li>
-                    <li class="menu-list-item"><a href="/contact.html" class="menu-link">Contact us</a></li>
-                    <li class="menu-list-item"><a href="" class="menu-button">Donate</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <!-- About Hero Section -->
-        <div class="about-hero py-5">
-            <div class="container pt-5">
-                <div class="row justify-content-center">
-                    <!-- About Hero Text -->
-                    <div class="col-lg-7 text-center mb-4">
-                        <h1 class="heading-two-bold mb-3">Who We Are</h1>
-                        <p class="heading-six-regular mb-4">
-                            We are committed to providing a loving and supportive home for children in need. Our mission
-                            is to help these children
-                            grow and thrive, and to give them the tools they need to succeed in life.
-                        </p>
-                        <a href="" class="hog-button hog-button-gold">Read our story</a>
+    <div class="main-layout">
+        <!-- Header -->
+        <header>
+            <!-- Navigation Bar Section -->
+            <nav>
+                <div class="container">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="/assets/images/hoghospice logo.png" alt="Heart OF Gold's Logo" class="img-fluid">
+                        </a>
                     </div>
-                    <!-- About Hero Image -->
-                    <div class="col-lg-6 text-center">
-                        <img src="assets/images/About us hero image.png" alt="" class="img-fluid z-index-1">
+                    <div class="menu">
+                        <!-- Logo Mobile Menu -->
+                        <div class="logo-menu-mobile">
+                            <a href="/">
+                                <img src="/assets/images/hoghospice logo.png" alt="Heart OF Gold's Logo">
+                                <div class="text">
+                                    <h3 class="body-base-bold">Hearts of Gold</h3>
+                                    <h6 class="body-small-regular">hoghospice.org</h6>
+                                </div>
+                            </a>
+                        </div>
+                        <ul class="menu-list">
+                            <li class="menu-list-item"><a href="/" class="menu-link">Home</a></li>
+                            <li class="menu-list-item"><a href="/about.html" class="menu-link active">About us</a></li>
+                            <li class="menu-list-item"><a href="/volunteer.html" class="menu-link">Volunteer</a></li>
+                            <li class="menu-list-item"><a href="" class="menu-link">Gallery</a></li>
+                            <li class="menu-list-item"><a href="/contact.html" class="menu-link">Contact us</a>
+                            </li>
+                            <li class="menu-list-item"><a href="" class="menu-button">Donate</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Bars for Hamburger -->
+                    <div class="bars">
+                        <span class="bar-child bar-one"></span>
+                        <span class="bar-child bar-two"></span>
+                        <span class="bar-child bar-three"></span>
                     </div>
                 </div>
+            </nav>
+        </header>
 
-                <!-- Floating Elements -->
-                <div class="floating-element floating-element-purple"></div>
-                <div class="floating-element floating-element-blue"></div>
-                <div class="floating-element floating-element-green"></div>
-                <div class="floating-element floating-element-faded-pink"></div>
-                <div class="floating-element floating-element-crown">
-                    <img src="assets/icons/Crown.svg" alt="">
-                </div>
-            </div>
-        </div>
+        <main>
+            <!-- About Hero Section -->
+            <div class="about-hero pb-5">
+                <div class="container pt-5">
+                    <div class="row justify-content-center">
+                        <!-- About Hero Text -->
+                        <div class="col-lg-7 text-center mb-4">
+                            <h1 class="heading-two-bold mb-3">Who We Are</h1>
+                            <p class="heading-six-regular mb-4">
+                                We are committed to providing a loving and supportive home for children in need. Our
+                                mission
+                                is to help these children
+                                grow and thrive, and to give them the tools they need to succeed in life.
+                            </p>
+                            <a href="#our-story" class="hog-button hog-button-gold">Read our story</a>
+                        </div>
+                        <!-- About Hero Image -->
+                        <div class="col-lg-6 text-center">
+                            <img src="assets/images/About us hero image.png" alt="" class="img-fluid z-index-1">
+                        </div>
+                    </div>
 
-        <!-- Our Values Section -->
-        <div class="values py-5 mb-5">
-            <div class="container">
-                <!-- value intro -->
-                <div class="row justify-content-center mb-5">
-                    <div class="col-lg-7 text-center">
-                        <p class="body-small-semibold mb-3">Our Values</p>
-                        <h2 class="heading-five-bold mb-3">We are an ambitious and passionate team with a shared vision
-                            and goal</h2>
-                        <p class="body-base-regular mb-3">Our shared values keep us connected and guide us as one team
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Value Listing -->
-                <div class="row">
-                    <!-- Compassion -->
-                    <div class="col-md-6 col-lg-4 text-center my-3">
-                        <img src="assets/icons/Compassion.png" alt="" class="img-fluid mb-3">
-                        <h5 class="body-large-semibold mb-2">Compassion</h5>
-                        <p class="body-small-regular">We prioritize compassion towards the children, and strive to
-                            create a welcoming environment</p>
-                    </div>
-                    <!-- Respect -->
-                    <div class="col-md-6 col-lg-4 text-center my-3">
-                        <img src="assets/icons/Respect.png" alt="" class="img-fluid mb-3">
-                        <h5 class="body-large-semibold mb-2">Respect</h5>
-                        <p class="body-small-regular">Utmost respect to the individual needs and rights of the children
-                            in our care is paramount</p>
-                    </div>
-                    <!-- Integrity -->
-                    <div class="col-md-6 col-lg-4 text-center my-3">
-                        <img src="assets/icons/Integrity.png" alt="" class="img-fluid mb-3">
-                        <h5 class="body-large-semibold mb-2">Integrity</h5>
-                        <p class="body-small-regular">We are honest and transparent in all our actions and
-                            decision-making</p>
-                    </div>
-                    <!-- Excellence -->
-                    <div class="col-md-6 col-lg-4 text-center my-3">
-                        <img src="assets/icons/Excellence.png" alt="" class="img-fluid mb-3">
-                        <h5 class="body-large-semibold mb-2">Excellence</h5>
-                        <p class="body-small-regular">We strive to provide the highest quality care and support to the
-                            children in our care</p>
-                    </div>
-                    <!-- Inclusivity -->
-                    <div class="col-md-6 col-lg-4 text-center my-3">
-                        <img src="assets/icons/Inclusivity.png" alt="" class="img-fluid mb-3">
-                        <h5 class="body-large-semibold mb-2">Inclusivity</h5>
-                        <p class="body-small-regular">We work to create a diverse environment that is supportive for
-                            children of all backgrounds</p>
-                    </div>
-                    <!-- Collaboration -->
-                    <div class="col-md-6 col-lg-4 text-center my-3">
-                        <img src="assets/icons/Collaboration.png" alt="" class="img-fluid mb-3">
-                        <h5 class="body-large-semibold mb-2">Collaboration</h5>
-                        <p class="body-small-regular">We work together and with other entities to provide the best
-                            possible care for the children</p>
+                    <!-- Floating Elements -->
+                    <div class="floating-element floating-element-purple"></div>
+                    <div class="floating-element floating-element-blue"></div>
+                    <div class="floating-element floating-element-green"></div>
+                    <div class="floating-element floating-element-faded-pink"></div>
+                    <div class="floating-element floating-element-crown">
+                        <img src="assets/icons/Crown.svg" alt="">
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Our Story Section -->
-        <div class="our-story py-5 mb-5">
-            <div class="container">
-                <!-- Story Intro -->
-                <div class="row justify-content-between">
-                    <!-- Story Heading Intro Left -->
-                    <div class="col-md-6">
-                        <h3 class="body-large-semibold">our story</h3>
-                        <h4 class="heading-five-bold">Providing a home and a <span class="highlight-text-red">supportive
-                                environment</span> for children who have been orphaned or abandoned</h4>
-                    </div>
-
-                    <!-- Story Listing -->
-                    <div class="col-md-5">
-                        <!-- Story One -->
-                        <div class="row mb-3">
-                            <!-- Number -->
-                            <div class="col-1">
-                                <h5 class="body-large-regular">01.</h5>
-                            </div>
-                            <!-- Text -->
-                            <div class="col-11">
-                                <h5 class="body-large-bold">20+ years of service</h5>
-                                <p class="body-small-regular">
-                                    For over 20 years, our facility has provided a safe and loving home for children who
-                                    have lost their parents or are
-                                    unable to live with their families
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Story Two -->
-                        <div class="row mb-3">
-                            <!-- Number -->
-                            <div class="col-1">
-                                <h5 class="body-large-regular">02.</h5>
-                            </div>
-                            <!-- Text -->
-                            <div class="col-11">
-                                <h5 class="body-large-bold">15,000+ orphaned children saved</h5>
-                                <p class="body-small-regular">
-                                    Over the years, our organization has helped to save the lives of 15,000 orphaned
-                                    children that have come from all walks
-                                    of life, but thanks to our dedicated team and generous donors, they have been given
-                                    the love, support, and opportunities
-                                    they need to thrive.
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Story Three -->
-                        <div class="row mb-3">
-                            <!-- Number -->
-                            <div class="col-1">
-                                <h5 class="body-large-regular">03.</h5>
-                            </div>
-                            <!-- Text -->
-                            <div class="col-11">
-                                <h5 class="body-large-bold">$10k+ total charities raised</h5>
-                                <p class="body-small-regular">
-                                    We couldn't have done it without the generosity of our employees, donors, and
-                                    community. Thank you for helping us make a
-                                    difference in the lives of these deserving children.
-                                </p>
-                            </div>
+            <!-- Our Values Section -->
+            <div class="values py-5 mb-5">
+                <div class="container">
+                    <!-- value intro -->
+                    <div class="row justify-content-center mb-5">
+                        <div class="col-lg-7 text-center">
+                            <p class="body-small-semibold mb-3">Our Values</p>
+                            <h2 class="heading-five-bold mb-3">We are an ambitious and passionate team with a shared
+                                vision
+                                and goal</h2>
+                            <p class="body-base-regular mb-3">Our shared values keep us connected and guide us as one
+                                team
+                            </p>
                         </div>
                     </div>
-                </div>
 
-                <!-- Story Video -->
-                <div class="row mt-5">
-                    <div class="col-md-12">
-                        <!-- Video Container -->
-                        <div class="video-container">
-                            <div class="overlay"></div>
-                            <div class="play-video-button">
-                                <img src="assets/icons/play-video-button.png" alt="" onclick="playStory()">
-                            </div>
+                    <!-- Value Listing -->
+                    <div class="row">
+                        <!-- Compassion -->
+                        <div class="col-md-6 col-lg-4 text-center my-3">
+                            <img src="assets/icons/Compassion.png" alt="" class="img-fluid mb-3">
+                            <h5 class="body-large-semibold mb-2">Compassion</h5>
+                            <p class="body-small-regular">We prioritize compassion towards the children, and strive to
+                                create a welcoming environment</p>
                         </div>
-                        <!-- Video Player -->
-                        <div class="video-player">
-                            <!-- Player -->
-                            <div class="ratio ratio-4x3">
-                                <video src="assets/video/file.mp4" controls="true"></video>
-                            </div>
-                            <!-- Close Button -->
-                            <img src="assets/icons/Close Video Button.png" alt="" class="close-video"
-                                onclick="playStory()">
+                        <!-- Respect -->
+                        <div class="col-md-6 col-lg-4 text-center my-3">
+                            <img src="assets/icons/Respect.png" alt="" class="img-fluid mb-3">
+                            <h5 class="body-large-semibold mb-2">Respect</h5>
+                            <p class="body-small-regular">Utmost respect to the individual needs and rights of the
+                                children
+                                in our care is paramount</p>
+                        </div>
+                        <!-- Integrity -->
+                        <div class="col-md-6 col-lg-4 text-center my-3">
+                            <img src="assets/icons/Integrity.png" alt="" class="img-fluid mb-3">
+                            <h5 class="body-large-semibold mb-2">Integrity</h5>
+                            <p class="body-small-regular">We are honest and transparent in all our actions and
+                                decision-making</p>
+                        </div>
+                        <!-- Excellence -->
+                        <div class="col-md-6 col-lg-4 text-center my-3">
+                            <img src="assets/icons/Excellence.png" alt="" class="img-fluid mb-3">
+                            <h5 class="body-large-semibold mb-2">Excellence</h5>
+                            <p class="body-small-regular">We strive to provide the highest quality care and support to
+                                the
+                                children in our care</p>
+                        </div>
+                        <!-- Inclusivity -->
+                        <div class="col-md-6 col-lg-4 text-center my-3">
+                            <img src="assets/icons/Inclusivity.png" alt="" class="img-fluid mb-3">
+                            <h5 class="body-large-semibold mb-2">Inclusivity</h5>
+                            <p class="body-small-regular">We work to create a diverse environment that is supportive for
+                                children of all backgrounds</p>
+                        </div>
+                        <!-- Collaboration -->
+                        <div class="col-md-6 col-lg-4 text-center my-3">
+                            <img src="assets/icons/Collaboration.png" alt="" class="img-fluid mb-3">
+                            <h5 class="body-large-semibold mb-2">Collaboration</h5>
+                            <p class="body-small-regular">We work together and with other entities to provide the best
+                                possible care for the children</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Our Vision Section -->
-        <div class="vision py-5">
-            <div class="container">
-                <div class="row justify-content-between">
-                    <!-- Vision Left -->
-                    <div class="col-lg-5">
-                        <h5 class="heading-five-bold mb-3">Our Vision</h5>
-                        <p class="body-base-regular mb-3">
-                            Hearts of Gold aspirations for the future are simply to continue to deliver quality service
-                            to our special children.
-                            Providing expert palliative care in a serene, relaxing environment and improving our
-                            services from time to time, sharing
-                            and assisting medical professionals who are contributing to the ever increasing number of
-                            children with special needs in
-                            our care.
-                        </p>
-                        <p class="body-base-regular mb-3">
-                            To train and develop our staff, especially in nursing, social care and counseling. We
-                            recognize the demand for
-                            children’s hospices and we will be looking at innovative ways to develop and expand our
-                            services to react and adapt to
-                            the ever growing needs of children with terminal and other life-threatening illnesses
-                            throughout our country, Nigeria.
-                        </p>
-                        <p class="body-base-regular mb-3">
-                            In addition to the excellent facilities we already have, we need your support to provide the
-                            much needed learning and
-                            play resources to help in the delivery of qualitative services required for the benefit of
-                            our children.
-                        </p>
-                        <p class="body-base-regular mb-3">
-                            Hearts of Gold services are provided free of charge. So we are entirely dependent on the
-                            generosity of individuals,
-                            organizations and corporate bodies for revenue and capital projects.
-                        </p>
-                        <p class="body-base-regular">
-                            Every child deserve respect, unconditional love and care, whether able or disabled, I
-                            believe that every child requires
-                            a safe home where love and attention is given. Hearts of Gold Children Hospice is the first
-                            and only children’s hospice
-                            and respite care facility in Nigeria.
-                        </p>
-                    </div>
-
-                    <!-- Vision Right -->
-                    <div class="col-lg-6">
-                        <img src="assets/images/About us - Our vision image.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer Section -->
-    <footer class="py-5 mt-5" id="footer">
-        <div class="container border-top">
-            <div class="row justify-content-between align-items-end">
-                <!-- Footer One -->
-                <div class="col-md-4 col-12 mt-5">
-                    <img src="assets/images/hoghospice logo.png" alt="" class="img-fluid mb-3">
-                    <h4 class="heading-one-bold mb-2">Get our updates!</h4>
-                    <p class="body-base-regular mb-4">
-                        Stay up to date with the latest news, and information <br />concerning the orphanage
-                    </p>
-                    <!-- Email Subscription Form -->
-                    <form>
-                        <div class="mb-3 sub-form">
-                            <!-- Input -->
-                            <input type="email" class="form-control" id="subscriber" placeholder="Enter email address">
-                            <button class="hog-button-subscribe">Subscribe</button>
+            <!-- Our Story Section -->
+            <div class="our-story py-5 mb-5" id="our-story">
+                <div class="container">
+                    <!-- Story Intro -->
+                    <div class="row justify-content-between">
+                        <!-- Story Heading Intro Left -->
+                        <div class="col-md-6">
+                            <h3 class="body-large-semibold">our story</h3>
+                            <h4 class="heading-five-bold">Providing a home and a <span
+                                    class="highlight-text-red">supportive
+                                    environment</span> for children who have been orphaned or abandoned</h4>
                         </div>
-                    </form>
-                </div>
-                <!-- Footer Two -->
-                <div class="col-md-2 col-6 mt-5">
-                    <h3 class="body-base-semibold mb-3">How To Help</h3>
-                    <ul class="help-links">
-                        <li class="links-within-list"><a href="">Donate</a></li>
-                        <li class="links-within-list"><a href="">Giving Plan</a></li>
-                        <li class="links-within-list"><a href="">Volunteer</a></li>
-                        <li class="links-within-list"><a href="">Learning Centre</a></li>
-                        <li class="links-within-list"><a href="">Urgent Items</a></li>
-                    </ul>
-                </div>
-                <!-- Footer Three -->
-                <div class="col-md-2 col-6 mt-5">
-                    <h3 class="body-base-semibold mb-3">Contact Us</h3>
-                    <ul class="help-links">
-                        <li class="links-within-list"><a href="mailto:hello@hoghospice.com">hello@hoghospice.com</a>
-                        </li>
-                        <!-- Instagram -->
-                        <li class="links-within-list"><a href="">
-                                <span class="d-flex align-items-center">
-                                    <span class="text">Instagram</span>
-                                    <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
-                                            height="auto"></span>
-                                </span>
-                            </a></li>
-                        <!-- Twitter -->
-                        <li class="links-within-list"><a href="">
-                                <span class="d-flex align-items-center">
-                                    <span class="text">Twitter</span>
-                                    <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
-                                            height="auto"></span>
-                                </span>
-                            </a></li>
-                        <!-- Facebook -->
-                        <li class="links-within-list"><a href="">
-                                <span class="d-flex align-items-center">
-                                    <span class="text">Facebook</span>
-                                    <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
-                                            height="auto"></span>
-                                </span>
-                            </a></li>
-                        <!-- LinkedIn -->
-                        <li class="links-within-list"><a href="">
-                                <span class="d-flex align-items-center">
-                                    <span class="text">LinkedIn</span>
-                                    <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
-                                            height="auto"></span>
-                                </span>
-                            </a></li>
-                    </ul>
-                </div>
 
-                <!-- Footer Copyright -->
-                <div class="col-12 mt-4">
-                    <p class="body-base-regular">Hearts of Gold Hospice - All Rights Reserved</p>
+                        <!-- Story Listing -->
+                        <div class="col-md-5">
+                            <!-- Story One -->
+                            <div class="row mb-3">
+                                <!-- Number -->
+                                <div class="col-1">
+                                    <h5 class="body-large-regular">01.</h5>
+                                </div>
+                                <!-- Text -->
+                                <div class="col-11">
+                                    <h5 class="body-large-bold">20+ years of service</h5>
+                                    <p class="body-small-regular">
+                                        For over 20 years, our facility has provided a safe and loving home for children
+                                        who
+                                        have lost their parents or are
+                                        unable to live with their families
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Story Two -->
+                            <div class="row mb-3">
+                                <!-- Number -->
+                                <div class="col-1">
+                                    <h5 class="body-large-regular">02.</h5>
+                                </div>
+                                <!-- Text -->
+                                <div class="col-11">
+                                    <h5 class="body-large-bold">15,000+ orphaned children saved</h5>
+                                    <p class="body-small-regular">
+                                        Over the years, our organization has helped to save the lives of 15,000 orphaned
+                                        children that have come from all walks
+                                        of life, but thanks to our dedicated team and generous donors, they have been
+                                        given
+                                        the love, support, and opportunities
+                                        they need to thrive.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Story Three -->
+                            <div class="row mb-3">
+                                <!-- Number -->
+                                <div class="col-1">
+                                    <h5 class="body-large-regular">03.</h5>
+                                </div>
+                                <!-- Text -->
+                                <div class="col-11">
+                                    <h5 class="body-large-bold">$10k+ total charities raised</h5>
+                                    <p class="body-small-regular">
+                                        We couldn't have done it without the generosity of our employees, donors, and
+                                        community. Thank you for helping us make a
+                                        difference in the lives of these deserving children.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Story Video -->
+                    <div class="row mt-5">
+                        <div class="col-md-12">
+                            <!-- Video Container -->
+                            <div class="video-container">
+                                <div class="overlay"></div>
+                                <div class="play-video-button">
+                                    <img src="assets/icons/play-video-button.png" alt="" onclick="playStory()">
+                                </div>
+                            </div>
+                            <!-- Video Player -->
+                            <div class="video-player">
+                                <!-- Player -->
+                                <div class="ratio ratio-4x3">
+                                    <video src="assets/video/file.mp4" controls="true"></video>
+                                </div>
+                                <!-- Close Button -->
+                                <img src="assets/icons/Close Video Button.png" alt="" class="close-video"
+                                    onclick="playStory()">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+
+            <!-- Our Vision Section -->
+            <div class="vision py-5">
+                <div class="container">
+                    <div class="row justify-content-between">
+                        <!-- Vision Left -->
+                        <div class="col-lg-5">
+                            <h5 class="heading-five-bold mb-3">Our Vision</h5>
+                            <p class="body-base-regular mb-3">
+                                Hearts of Gold aspirations for the future are simply to continue to deliver quality
+                                service
+                                to our special children.
+                                Providing expert palliative care in a serene, relaxing environment and improving our
+                                services from time to time, sharing
+                                and assisting medical professionals who are contributing to the ever increasing number
+                                of
+                                children with special needs in
+                                our care.
+                            </p>
+                            <p class="body-base-regular mb-3">
+                                To train and develop our staff, especially in nursing, social care and counseling. We
+                                recognize the demand for
+                                children’s hospices and we will be looking at innovative ways to develop and expand our
+                                services to react and adapt to
+                                the ever growing needs of children with terminal and other life-threatening illnesses
+                                throughout our country, Nigeria.
+                            </p>
+                            <p class="body-base-regular mb-3">
+                                In addition to the excellent facilities we already have, we need your support to provide
+                                the
+                                much needed learning and
+                                play resources to help in the delivery of qualitative services required for the benefit
+                                of
+                                our children.
+                            </p>
+                            <p class="body-base-regular mb-3">
+                                Hearts of Gold services are provided free of charge. So we are entirely dependent on the
+                                generosity of individuals,
+                                organizations and corporate bodies for revenue and capital projects.
+                            </p>
+                            <p class="body-base-regular">
+                                Every child deserve respect, unconditional love and care, whether able or disabled, I
+                                believe that every child requires
+                                a safe home where love and attention is given. Hearts of Gold Children Hospice is the
+                                first
+                                and only children’s hospice
+                                and respite care facility in Nigeria.
+                            </p>
+                        </div>
+
+                        <!-- Vision Right -->
+                        <div class="col-lg-6">
+                            <img src="assets/images/About us - Our vision image.png" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="py-5 mt-5" id="footer">
+            <div class="container border-top">
+                <div class="row justify-content-between align-items-end">
+                    <!-- Footer One -->
+                    <div class="col-md-12 col-lg-4 col-12 mt-5">
+                        <img src="assets/images/hoghospice logo.png" alt="" class="img-fluid mb-3">
+                        <h4 class="heading-one-bold mb-2">Get our updates!</h4>
+                        <p class="body-base-regular mb-4">
+                            Stay up to date with the latest news, and information <br />concerning the orphanage
+                        </p>
+                        <!-- Email Subscription Form -->
+                        <form>
+                            <div class="mb-3 sub-form">
+                                <!-- Input -->
+                                <input type="email" class="form-control" id="subscriber"
+                                    placeholder="Enter email address">
+                                <button class="hog-button-subscribe">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- Footer Two -->
+                    <div class="col-md-6 col-lg-2 col-6 mt-5">
+                        <h3 class="body-base-semibold mb-3">How To Help</h3>
+                        <ul class="help-links">
+                            <li class="links-within-list"><a href="">Donate</a></li>
+                            <li class="links-within-list"><a href="">Giving Plan</a></li>
+                            <li class="links-within-list"><a href="">Volunteer</a></li>
+                            <li class="links-within-list"><a href="">Learning Centre</a></li>
+                            <li class="links-within-list"><a href="">Urgent Items</a></li>
+                        </ul>
+                    </div>
+                    <!-- Footer Three -->
+                    <div class="col-md-6 col-lg-2 col-6 mt-5">
+                        <h3 class="body-base-semibold mb-3">Contact Us</h3>
+                        <ul class="help-links">
+                            <li class="links-within-list"><a href="mailto:hello@hoghospice.com">hello@hoghospice.com</a>
+                            </li>
+                            <!-- Instagram -->
+                            <li class="links-within-list"><a href="">
+                                    <span class="d-flex align-items-center">
+                                        <span class="text">Instagram</span>
+                                        <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
+                                                height="auto"></span>
+                                    </span>
+                                </a></li>
+                            <!-- Twitter -->
+                            <li class="links-within-list"><a href="">
+                                    <span class="d-flex align-items-center">
+                                        <span class="text">Twitter</span>
+                                        <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
+                                                height="auto"></span>
+                                    </span>
+                                </a></li>
+                            <!-- Facebook -->
+                            <li class="links-within-list"><a href="">
+                                    <span class="d-flex align-items-center">
+                                        <span class="text">Facebook</span>
+                                        <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
+                                                height="auto"></span>
+                                    </span>
+                                </a></li>
+                            <!-- LinkedIn -->
+                            <li class="links-within-list"><a href="">
+                                    <span class="d-flex align-items-center">
+                                        <span class="text">LinkedIn</span>
+                                        <span class="ms-1"><img src="/assets/icons/Arrow Link.svg" alt="" width="20"
+                                                height="auto"></span>
+                                    </span>
+                                </a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer Copyright -->
+                    <div class="col-12 mt-4">
+                        <p class="body-base-regular">Hearts of Gold Hospice - All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <!-- Scrtipts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+        integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"
+        integrity="sha512-+gShyB8GWoOiXNwOlBaYXdLTiZt10Iy6xjACGadpqMs20aJOoh+PJt3bwUVA6Cefe7yF7vblX6QwyXZiVwTWGg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="scripts/main.js"></script>
 </body>
