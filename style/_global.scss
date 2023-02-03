@@ -169,11 +169,20 @@
     gap: 6px;
     border-radius: 16px;
 
+    @media screen and (max-width: 500px) {
+        font-size: 8px;
+    }
+
     .dot {
         width: 6px;
         height: 6px;
         border-radius: 12px;
         background-color: #7A4A02;
+
+        @media screen and (max-width: 500px) {
+            width: 2.88px;
+            height: 2.88px;
+        }
     }
 }
 
@@ -188,11 +197,20 @@
     gap: 6px;
     border-radius: 16px;
 
+    @media screen and (max-width: 500px) {
+        font-size: 8px;
+    }
+
     .dot {
         width: 6px;
         height: 6px;
         border-radius: 12px;
         background-color: #057A02;
+
+        @media screen and (max-width: 500px) {
+            width: 2.88px;
+            height: 2.88px;
+        }
     }
 }
 

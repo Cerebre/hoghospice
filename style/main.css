@@ -207,11 +207,22 @@
   gap: 6px;
   border-radius: 16px;
 }
+@media screen and (max-width: 500px) {
+  .status-ongoing {
+    font-size: 8px;
+  }
+}
 .status-ongoing .dot {
   width: 6px;
   height: 6px;
   border-radius: 12px;
   background-color: #7A4A02;
+}
+@media screen and (max-width: 500px) {
+  .status-ongoing .dot {
+    width: 2.88px;
+    height: 2.88px;
+  }
 }
 
 .status-complete {
@@ -225,11 +236,22 @@
   gap: 6px;
   border-radius: 16px;
 }
+@media screen and (max-width: 500px) {
+  .status-complete {
+    font-size: 8px;
+  }
+}
 .status-complete .dot {
   width: 6px;
   height: 6px;
   border-radius: 12px;
   background-color: #057A02;
+}
+@media screen and (max-width: 500px) {
+  .status-complete .dot {
+    width: 2.88px;
+    height: 2.88px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -1015,8 +1037,23 @@ header nav .container .bars .bar-child.bar-three {
     width: 90%;
   }
 }
+@media screen and (max-width: 500px) {
+  .donate-card {
+    width: 100%;
+  }
+  .donate-card .heading-six-semibold {
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 600;
+  }
+}
 .donate-card #category {
   color: var(--foundation-secondary-600);
+}
+@media screen and (max-width: 500px) {
+  .donate-card #category {
+    font-size: 10px;
+  }
 }
 .donate-card #title {
   color: var(--foundation-grey-500);
@@ -1033,11 +1070,21 @@ header nav .container .bars .bar-child.bar-three {
 .donate-card #status p:nth-child(1) {
   margin-bottom: 2px;
 }
+@media screen and (max-width: 500px) {
+  .donate-card #status .body-base-regular,
+.donate-card #status .body-base-semibold,
+.donate-card #target .body-base-regular,
+.donate-card #target .body-base-semibold {
+    font-size: 10px;
+  }
+}
 .donate-card .donate-img {
   width: 100%;
 }
 @media screen and (max-width: 768px) {
   .donate-card .hog-button {
     width: 100%;
+    padding: 13px;
+    font-size: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
