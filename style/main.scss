@@ -61,6 +61,8 @@ header {
     top: 0;
     left: 0;
     z-index: 20;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 14px rgba(95, 95, 95, 0.05);
     // display: none;
 
     // Nav Menu Styles
@@ -475,49 +477,6 @@ header {
         }
     }
 
-    // Contact Form Styling
-    form {
-
-        label {
-            @include body-small-regular();
-            color: var(--foundation-grey-500);
-        }
-
-        input {
-            &.input-style {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                padding: 10px 16px;
-                gap: 10px;
-            }
-
-            &::placeholder {
-                font-size: 14px;
-                color: #9E9D9D;
-            }
-        }
-
-        .iti {
-            display: flex;
-        }
-
-        textarea {
-            resize: none;
-        }
-
-        .agree-link {
-            color: var(--foundation-primary-700);
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        button {
-            border: 0;
-            @include body-base-semibold();
-        }
-    }
-
 }
 
 // Map Section Styling
@@ -797,6 +756,121 @@ header {
             top: 0;
             left: 50%;
             transform: translate(-50%, -50%);
+        }
+    }
+}
+
+// Volunteer
+.volunteer {
+    .container {
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.02);
+
+        .volunteer-intro {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/Volunteer\ form\ -\ Image.png');
+            background-size: cover;
+            background-position: center center;
+            padding: 40px 40px 0 40px;
+
+            @media screen and (max-width: 768px) {
+                height: 65vh;
+                border-radius: 10px 10px 0px 0px;
+            }
+        }
+
+        .volunteer-form {
+            background-color: #FFFFFF;
+            padding: 40px 40px 40px 40px;
+
+            @media screen and (max-width: 768px) {
+                padding: 28px 28px 28px 28px;
+            }
+        }
+    }
+}
+
+// Donate
+.donate-hero {
+    position: relative;
+}
+
+.donate-hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('../assets/images/Donate\ page\ hero\ mage.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 45vh;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .floating-image {
+        position: absolute;
+        left: -57px;
+        top: 375px;
+        z-index: -1;
+
+        @media screen and (max-width: 1024px) {
+            left: -25px;
+            top: 330px;
+
+        }
+
+        @media screen and (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.donate-card {
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 15px 25px rgba(73, 69, 69, 0.02);
+    border-radius: 10px;
+    width: 95%;
+    height: 100%;
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 32px;
+        width: 90%;
+    }
+
+    #category {
+        color: var(--foundation-secondary-600);
+    }
+
+    #title {
+        color: var(--foundation-grey-500);
+    }
+
+    #exerpt {
+        color: var(--foundation-grey-300);
+        min-width: 100%;
+        max-width: 336px;
+    }
+
+    #target {
+        p:nth-child(2) {
+            color: var(--foundation-primary-700);
+            margin-top: 2px;
+        }
+    }
+
+    #status {
+        p:nth-child(1) {
+            margin-bottom: 2px;
+        }
+    }
+
+    .donate-img {
+        width: 100%;
+    }
+
+    .hog-button {
+        @media screen and (max-width: 768px) {
+            width: 100%;
         }
     }
 }

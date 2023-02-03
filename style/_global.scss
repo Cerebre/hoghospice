@@ -71,6 +71,19 @@
     @include heading-six-semibold();
 }
 
+// Caption
+.caption-base-regular {
+    @include caption-base-regular();
+}
+
+.caption-base-semibold {
+    @include caption-base-semibold();
+}
+
+.caption-base-bold {
+    @include caption-base-bold();
+}
+
 // Button Classes & Declarations
 .hog-button {
     display: inline-flex;
@@ -91,6 +104,10 @@
     &:hover {
         color: inherit;
     }
+}
+
+.hog-button-gold-text {
+    color: var(--foundation-primary-600)
 }
 
 .hog-button-outline {
@@ -135,4 +152,107 @@
 
 .highlight-text-red {
     color: var(--foundation-secondary-600);
+}
+
+.optional-text {
+    color: var(--foundation-grey-300);
+}
+
+.status-ongoing {
+    background-color: #FDF6EC;
+    color: #7A4A02;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px 2px 6px;
+    gap: 6px;
+    border-radius: 16px;
+
+    .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 12px;
+        background-color: #7A4A02;
+    }
+}
+
+.status-complete {
+    background-color: #EDFDEC;
+    color: #057A02;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 8px 2px 6px;
+    gap: 6px;
+    border-radius: 16px;
+
+    .dot {
+        width: 6px;
+        height: 6px;
+        border-radius: 12px;
+        background-color: #057A02;
+    }
+}
+
+.container {
+    @media screen and (max-width: 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+//Form Styling
+form {
+
+    label {
+        @include body-small-regular();
+        color: var(--foundation-grey-500);
+    }
+
+    input {
+        &.input-style {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 16px;
+            gap: 10px;
+        }
+
+        &::placeholder {
+            font-size: 14px;
+            color: #9E9D9D;
+        }
+    }
+
+    select {
+        &.input-style {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 10px 16px;
+            gap: 10px;
+            @include body-small-regular();
+        }
+    }
+
+    .iti {
+        display: flex;
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    .agree-link {
+        color: var(--foundation-primary-700);
+        text-decoration: none;
+        font-weight: 700;
+    }
+
+    button {
+        border: 0;
+        @include body-base-semibold();
+    }
 }
