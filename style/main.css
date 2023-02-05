@@ -77,16 +77,22 @@
   font-weight: 700;
 }
 
-.heading-five-bold {
+.heading-five-regular {
   font-size: 24px;
   line-height: 130%;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 .heading-five-semibold {
   font-size: 24px;
   line-height: 130%;
   font-weight: 600;
+}
+
+.heading-five-bold {
+  font-size: 24px;
+  line-height: 130%;
+  font-weight: 700;
 }
 
 .heading-six-regular {
@@ -326,6 +332,7 @@ html {
 body {
   background-color: #FCFCFC;
   height: 100%;
+  color: var(--foundation-grey-300);
 }
 
 :root {
@@ -1005,6 +1012,11 @@ header nav .container .bars .bar-child.bar-three {
   align-items: center;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  .donate-hero-bg {
+    min-height: 55vh;
+  }
+}
 .donate-hero-bg .floating-image {
   position: absolute;
   left: -57px;
@@ -1028,23 +1040,32 @@ header nav .container .bars .bar-child.bar-three {
   background: #FFFFFF;
   box-shadow: 0px 15px 25px rgba(73, 69, 69, 0.02);
   border-radius: 10px;
-  width: 95%;
+  width: 100%;
   height: 100%;
 }
 @media screen and (max-width: 1024px) {
   .donate-card {
-    padding-top: 32px;
+    padding: 32px 12px 24px 12px;
     width: 90%;
   }
 }
 @media screen and (max-width: 500px) {
   .donate-card {
+    padding: 12px;
     width: 100%;
   }
   .donate-card .heading-six-semibold {
     font-size: 12px;
     line-height: 160%;
     font-weight: 600;
+  }
+}
+.donate-card #tas {
+  width: 95%;
+}
+@media screen and (max-width: 768px) {
+  .donate-card #tas {
+    width: 100%;
   }
 }
 .donate-card #category {
@@ -1057,11 +1078,23 @@ header nav .container .bars .bar-child.bar-three {
 }
 .donate-card #title {
   color: var(--foundation-grey-500);
+  width: 336px;
+  height: 64px;
+}
+@media screen and (max-width: 500px) {
+  .donate-card #title {
+    height: initial;
+  }
+}
+@media screen and (max-width: 768px) {
+  .donate-card #title {
+    width: 100%;
+  }
 }
 .donate-card #exerpt {
   color: var(--foundation-grey-300);
-  min-width: 100%;
   max-width: 336px;
+  height: 104px;
 }
 .donate-card #target p:nth-child(2) {
   color: var(--foundation-primary-700);
@@ -1087,4 +1120,8 @@ header nav .container .bars .bar-child.bar-three {
     padding: 13px;
     font-size: 10px;
   }
+}
+
+.founders-note .body-base-semibold {
+  color: var(--foundation-grey-500);
 }/*# sourceMappingURL=main.css.map */

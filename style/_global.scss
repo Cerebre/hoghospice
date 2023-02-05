@@ -55,13 +55,18 @@
     @include heading-three-bold();
 }
 
-.heading-five-bold {
-    @include heading-five-bold();
+.heading-five-regular {
+    @include heading-five-regular();
 }
 
 .heading-five-semibold {
     @include heading-five-semibold();
 }
+
+.heading-five-bold {
+    @include heading-five-bold();
+}
+
 
 .heading-six-regular {
     @include heading-six-regular();
