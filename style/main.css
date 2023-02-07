@@ -1006,7 +1006,7 @@ header nav .container .bars .bar-child.bar-three {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 45vh;
+  min-height: 50vh;
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -1046,7 +1046,6 @@ header nav .container .bars .bar-child.bar-three {
 @media screen and (max-width: 1024px) {
   .donate-card {
     padding: 32px 12px 24px 12px;
-    width: 90%;
   }
 }
 @media screen and (max-width: 500px) {
@@ -1090,7 +1089,7 @@ header nav .container .bars .bar-child.bar-three {
     height: initial;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1440px) {
   .donate-card #title {
     width: 100%;
   }
