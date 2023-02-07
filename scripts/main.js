@@ -122,3 +122,10 @@ if (mq.matches) {
     }
   }
 }
+
+// Back Button Donation Page
+const backButton = document.getElementById('backButton');
+
+backButton.addEventListener('click', function () {
+  window.location = '/donate.html';
+});

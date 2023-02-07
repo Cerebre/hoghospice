@@ -112,7 +112,11 @@
 }
 
 .hog-button-gold-text {
-    color: var(--foundation-primary-600)
+    color: var(--foundation-primary-600);
+
+    &:hover {
+        color: var(--foundation-primary-700);
+    }
 }
 
 .hog-button-outline {
@@ -162,6 +166,10 @@
 .optional-text {
     color: var(--foundation-grey-300);
 }
+
+// .img-grayscale {
+//     mix-blend-mode: luminosity;
+// }
 
 .status-ongoing {
     background-color: #FDF6EC;
