@@ -799,8 +799,8 @@ header {
     background-repeat: no-repeat;
     min-height: 50vh;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
+    display: grid;
+    place-items: center;
     position: relative;
 
     @media screen and (max-width: 1024px) {
@@ -834,7 +834,7 @@ header {
     height: 100%;
 
     @media screen and (max-width: 1024px) {
-        padding: 32px 12px 24px 12px;
+        // padding: 32px 12px 24px 12px;
         // width: 90%;
     }
 
@@ -848,7 +848,9 @@ header {
     }
 
     #tas {
-        width: 95%;
+        width: 333px;
+        display: flex;
+        justify-content: space-between;
 
         @media screen and (max-width: 768px) {
             width: 100%;
@@ -865,7 +867,7 @@ header {
 
     #title {
         color: var(--foundation-grey-500);
-        width: 336px;
+        max-width: 336px;
         height: 64px;
 
         a {
@@ -886,7 +888,7 @@ header {
         color: var(--foundation-grey-300);
         // min-width: 100%;
         max-width: 336px;
-        height: 104px;
+        min-height: 104px;
     }
 
     #target {
@@ -921,7 +923,7 @@ header {
         @media screen and (max-width: 768px) {
             width: 100%;
             padding: 13px;
-            font-size: 10px;
+            font-size: 15px;
         }
     }
 }
