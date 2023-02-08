@@ -1,13 +1,19 @@
 // Country Code Input
-if (document) {
-  document.addEventListener('DOMContentLoaded', function () {
-    var input = document.querySelector('.country-code-input');
-    var iti = window.intlTelInput(input, {
-      preferredCountries: ['ng'],
-      separateDialCode: true,
-      nationalMode: false,
+if (
+  window.location.href.indexOf('./contact.html') == -1 &&
+  window.location.href.indexOf('./volunteer.html') == -1
+) {
+  // Your JavaScript code here
+  if (document) {
+    document.addEventListener('DOMContentLoaded', function () {
+      var input = document.querySelector('.country-code-input');
+      var iti = window.intlTelInput(input, {
+        preferredCountries: ['ng'],
+        separateDialCode: true,
+        nationalMode: false,
+      });
     });
-  });
+  }
 }
 
 // Play and Popup Video
@@ -123,9 +129,35 @@ if (mq.matches) {
   }
 }
 
-// Back Button Donation Page
-const backButton = document.getElementById('backButton');
+// Shortening Texts on 1366px
+const screenSize1366px = window.matchMedia('(width: 1366px)');
 
-backButton.addEventListener('click', function () {
-  window.location = '/donate.html';
-});
+if (screenSize1366px.matches) {
+  const shortTitle = document.getElementsByClassName('checkTextLenght');
+
+  for (let i = 0; i < shortTitle.length; i++) {
+    let shortTitles = shortTitle[i];
+    if (shortTitles.innerText.length > 46) {
+      shortTitles.innerText = shortTitles.innerText.substring(0, 46) + '...';
+    }
+  }
+
+  const shortExerpt = document.getElementsByClassName('excerpt');
+
+  for (let i = 0; i < shortExerpt.length; i++) {
+    let shortExerpts = shortExerpt[i];
+    if (shortExerpts.innerText.length > 127) {
+      shortExerpts.innerText = shortExerpts.innerText.substring(0, 112) + '...';
+    }
+  }
+}
+
+// Back Button Donation Page
+if (window.location.href.indexOf('./donate/') == -1) {
+  // Your JavaScript code here
+  const backButton = document.getElementById('backButton');
+
+  backButton.addEventListener('click', function () {
+    window.location = '/donate.html';
+  });
+}

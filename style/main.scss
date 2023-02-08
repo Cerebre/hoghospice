@@ -807,6 +807,10 @@ header {
         min-height: 55vh;
     }
 
+    @media screen and (width: 1366px) {
+        min-height: 60vh;
+    }
+
     .floating-image {
         position: absolute;
         left: -57px;
@@ -853,6 +857,10 @@ header {
         justify-content: space-between;
 
         @media screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        @media screen and (width: 1366px) {
             width: 100%;
         }
     }
@@ -980,6 +988,25 @@ header {
     background-color: rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     margin: 24px 0;
+}
+
+#donation-details {
+    #vart {
+        span {
+            display: flex;
+            align-items: center;
+            width: auto;
+
+            &:nth-child(1) {
+                margin-right: 48px;
+
+                @media screen and (max-width: 500px) {
+                    margin-right: 20px;
+                }
+            }
+
+        }
+    }
 }
 
 .donation-details {

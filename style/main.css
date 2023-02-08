@@ -134,6 +134,11 @@
   gap: 10px;
   text-decoration: none;
 }
+@media screen and (width: 1366px) {
+  .hog-button {
+    padding: 13px 20px;
+  }
+}
 
 .hog-button-gold {
   font-size: 16px;
@@ -287,10 +292,6 @@ form input::-moz-placeholder {
   font-size: 14px;
   color: #9E9D9D;
 }
-form input:-ms-input-placeholder {
-  font-size: 14px;
-  color: #9E9D9D;
-}
 form input::placeholder {
   font-size: 14px;
   color: #9E9D9D;
@@ -372,7 +373,6 @@ body {
 }
 
 header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -682,10 +682,6 @@ header nav .container .bars .bar-child.bar-three {
   padding: 16px 10px;
 }
 #footer .sub-form #subscriber::-moz-placeholder {
-  font-size: 14px;
-  color: #959696;
-}
-#footer .sub-form #subscriber:-ms-input-placeholder {
   font-size: 14px;
   color: #959696;
 }
@@ -1017,6 +1013,11 @@ header nav .container .bars .bar-child.bar-three {
     min-height: 55vh;
   }
 }
+@media screen and (width: 1366px) {
+  .donate-hero-bg {
+    min-height: 60vh;
+  }
+}
 .donate-hero-bg .floating-image {
   position: absolute;
   left: -57px;
@@ -1064,6 +1065,11 @@ header nav .container .bars .bar-child.bar-three {
     width: 100%;
   }
 }
+@media screen and (width: 1366px) {
+  .donate-card #tas {
+    width: 100%;
+  }
+}
 .donate-card #category {
   color: var(--foundation-secondary-600);
 }
@@ -1105,9 +1111,9 @@ header nav .container .bars .bar-child.bar-three {
 }
 @media screen and (max-width: 500px) {
   .donate-card #status .body-base-regular,
-.donate-card #status .body-base-semibold,
-.donate-card #target .body-base-regular,
-.donate-card #target .body-base-semibold {
+  .donate-card #status .body-base-semibold,
+  .donate-card #target .body-base-regular,
+  .donate-card #target .body-base-semibold {
     font-size: 10px;
   }
 }
@@ -1168,6 +1174,20 @@ header nav .container .bars .bar-child.bar-three {
   background-color: rgba(0, 0, 0, 0.2);
   border-radius: 50px;
   margin: 24px 0;
+}
+
+#donation-details #vart span {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+#donation-details #vart span:nth-child(1) {
+  margin-right: 48px;
+}
+@media screen and (max-width: 500px) {
+  #donation-details #vart span:nth-child(1) {
+    margin-right: 20px;
+  }
 }
 
 .donation-details .body-base-regular {
