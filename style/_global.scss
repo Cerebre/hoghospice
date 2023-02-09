@@ -134,6 +134,32 @@
     }
 }
 
+.testimonial-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 13px 30px;
+    gap: 10px;
+    border: 1px solid #957C4D;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--foundation-primary-700);
+
+    &:hover {
+        color: var(--foundation-primary-700);
+    }
+}
+
+.about-button {
+    text-decoration: none;
+    color: var(--foundation-secondary-600);
+
+    &:hover {
+        color: var(--foundation-secondary-600);
+    }
+}
+
 .open-link {
     @include body-base-semibold();
     color: var(--foundation-secondary-600);
