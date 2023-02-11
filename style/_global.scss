@@ -51,6 +51,10 @@
     @include heading-two-bold();
 }
 
+.heading-three-semibold {
+    @include heading-three-semibold();
+}
+
 .heading-three-bold {
     @include heading-three-bold();
 }
@@ -196,6 +200,20 @@
 .optional-text {
     color: var(--foundation-grey-300);
 }
+
+.breadcrumb-item {
+    @include caption-base-regular();
+
+    a {
+        color: var(--foundation-grey-300);
+        text-decoration: none;
+    }
+
+    &.active {
+        color: var(--foundation-primary-700);
+    }
+}
+
 
 // .img-grayscale {
 //     mix-blend-mode: luminosity;

@@ -1018,9 +1018,14 @@ header {
 }
 
 // Testimonial Page
-#testimonial-hero {
+#testimonial-hero,
+#testimonial-story-container {
     .body-small-semibold {
         color: var(--foundation-primary-700);
+    }
+
+    .heading-three-bold {
+        color: var(--foundation-grey-500);
     }
 }
 
@@ -1056,4 +1061,93 @@ header {
         }
     }
 
+}
+
+#testimonial-stories {
+    .heading-three-semibold {
+        color: var(--foundation-grey-500);
+    }
+}
+
+// Visitors Page
+// .visiting-hours {
+//     list-style: none;
+//     padding-left: 0;
+
+//     .period {
+//         display: flex;
+//         // width: auto;
+//         justify-content: space-between;
+//         margin: 24px 0;
+//         align-items: flex-start;
+//         width: 479px;
+
+//         &:nth-child(1) {
+//             width: 23px;
+//         }
+
+//         span {
+//             flex-grow: 0;
+//             flex: none;
+
+//             &:nth-child(1) {
+//                 order: 0;
+//                 // width: 30%;
+//             }
+
+//             &:nth-child(2) {
+//                 order: 1;
+//                 // width: 15%;
+//             }
+
+//             &:nth-child(3) {
+//                 order: 2;
+//                 // width: 35%;
+//             }
+//         }
+//     }
+// }
+
+#vhr {
+    .heading-five-semibold {
+        color: var(--foundation-grey-500);
+    }
+
+    // Left Side of VHR
+    #left-vhr {
+        tr {
+            margin-top: 24px;
+            margin-bottom: 24px;
+
+            th {
+                @include body-base-semibold();
+                color: var(--foundation-grey-500);
+            }
+
+            td {
+                @include body-base-regular();
+                color: var(--foundation-grey-400);
+            }
+        }
+
+        .table>:not(caption)>*>* {
+            padding: 0.5rem 0rem
+        }
+    }
+
+    // Right Side of VHR
+    #right-vhr {
+        .body-base-regular {
+            color: var(--foundation-grey-300);
+        }
+
+        .rules {
+            color: var(--foundation-grey-400);
+            @include body-base-regular();
+
+            li {
+                margin: 16px 0;
+            }
+        }
+    }
 }
