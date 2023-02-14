@@ -1151,3 +1151,60 @@ header {
         }
     }
 }
+
+// Gallery
+#gallery-hero {
+    .body-small-semibold {
+        color: var(--foundation-primary-700);
+        margin-bottom: 16px;
+    }
+
+    .heading-three-bold {
+        color: var(--foundation-grey-500);
+        margin-bottom: 16px;
+    }
+
+    .heading-six-regular {
+        margin-bottom: 16px;
+    }
+
+}
+
+#gallery {
+    label {
+        margin-bottom: 8px;
+    }
+
+    .grid-items {
+        display: none;
+        align-items: center;
+        justify-content: center;
+
+        &.visible {
+            display: flex;
+        }
+    }
+}
+
+.gallery-button {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    border-radius: 50px;
+    border: 0;
+
+    &.active {
+        background-color: var(--foundation-primary-700);
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 10px 20px;
+    }
+}
+
+.data-unavailable {
+    display: none;
+}

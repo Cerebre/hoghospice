@@ -1315,4 +1315,51 @@ header nav .container .bars .bar-child.bar-three {
 }
 #vhr #right-vhr .rules li {
   margin: 16px 0;
+}
+
+#gallery-hero .body-small-semibold {
+  color: var(--foundation-primary-700);
+  margin-bottom: 16px;
+}
+#gallery-hero .heading-three-bold {
+  color: var(--foundation-grey-500);
+  margin-bottom: 16px;
+}
+#gallery-hero .heading-six-regular {
+  margin-bottom: 16px;
+}
+
+#gallery label {
+  margin-bottom: 8px;
+}
+#gallery .grid-items {
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+#gallery .grid-items.visible {
+  display: flex;
+}
+
+.gallery-button {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 30px;
+  gap: 10px;
+  border-radius: 50px;
+  border: 0;
+}
+.gallery-button.active {
+  background-color: var(--foundation-primary-700);
+}
+@media screen and (max-width: 1024px) {
+  .gallery-button {
+    padding: 10px 20px;
+  }
+}
+
+.data-unavailable {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

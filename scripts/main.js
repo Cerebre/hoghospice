@@ -153,11 +153,129 @@ if (screenSize1366px.matches) {
 }
 
 // Back Button Donation Page
-if (window.location.href.indexOf('./donate/') == -1) {
-  // Your JavaScript code here
-  const backButton = document.getElementById('backButton');
+const backButton = document.getElementById('backButton');
 
-  backButton.addEventListener('click', function () {
-    window.location = '/donate.html';
-  });
+if (backButton) {
+  if (window.location.href.indexOf('./donate/') == -1) {
+    backButton.addEventListener('click', function () {
+      window.location = '/donate.html';
+    });
+  }
 }
+
+// Gallery Sorting
+const yearSelect = document.getElementById('year-select');
+const imageContainer = document.getElementById('grid-container');
+const imageItems = imageContainer.querySelectorAll('.grid-items');
+const dataAvailable = document.querySelector('.data-unavailable');
+const currentButton = document.getElementsByClassName('gallery-button');
+
+const filterImages = function (selectedYear) {
+  let visibleImageItems = 0;
+  imageItems.forEach(function (imageItem) {
+    if (
+      selectedYear === 'all' ||
+      imageItem.getAttribute('data-year') === selectedYear
+    ) {
+      imageItem.style.display = 'block';
+      visibleImageItems += 1;
+    } else {
+      imageItem.style.display = 'none';
+    }
+  });
+  if (visibleImageItems === 0) {
+    dataAvailable.style.display = 'block';
+    // console.log('No images available');
+  } else {
+    dataAvailable.style.display = 'none';
+    // console.log('Images available');
+  }
+};
+
+yearSelect.addEventListener('change', function () {
+  filterImages(this.value);
+});
+
+// Filter By Year Button
+const filterAllButton = document.getElementById('filter-all');
+const filter2023Button = document.getElementById('filter-2023');
+const filter2022Button = document.getElementById('filter-2022');
+const filter2021Button = document.getElementById('filter-2021');
+const filter2020Button = document.getElementById('filter-2020');
+const filter2019Button = document.getElementById('filter-2019');
+const filter2018Button = document.getElementById('filter-2018');
+const filter2017Button = document.getElementById('filter-2017');
+const filter2016Button = document.getElementById('filter-2016');
+const filter2015Button = document.getElementById('filter-2015');
+const filter2014Button = document.getElementById('filter-2014');
+const filter2013Button = document.getElementById('filter-2013');
+const filter2012Button = document.getElementById('filter-2012');
+const filter2011Button = document.getElementById('filter-2011');
+const filter2010Button = document.getElementById('filter-2010');
+const filter2009Button = document.getElementById('filter-2009');
+const filter2008Button = document.getElementById('filter-2008');
+const filter2007Button = document.getElementById('filter-2007');
+const filter2006Button = document.getElementById('filter-2006');
+const filter2005Button = document.getElementById('filter-2005');
+
+filterAllButton.addEventListener('click', function () {
+  filterImages('all');
+});
+
+filter2023Button.addEventListener('click', function () {
+  filterImages('2023');
+});
+filter2022Button.addEventListener('click', function () {
+  filterImages('2022');
+});
+filter2021Button.addEventListener('click', function () {
+  filterImages('2021');
+});
+filter2020Button.addEventListener('click', function () {
+  filterImages('2020');
+});
+filter2019Button.addEventListener('click', function () {
+  filterImages('2019');
+});
+filter2018Button.addEventListener('click', function () {
+  filterImages('2018');
+});
+filter2017Button.addEventListener('click', function () {
+  filterImages('2017');
+});
+filter2016Button.addEventListener('click', function () {
+  filterImages('2016');
+});
+filter2015Button.addEventListener('click', function () {
+  filterImages('2015');
+});
+filter2014Button.addEventListener('click', function () {
+  filterImages('2014');
+});
+filter2013Button.addEventListener('click', function () {
+  filterImages('2013');
+});
+filter2012Button.addEventListener('click', function () {
+  filterImages('2012');
+});
+filter2011Button.addEventListener('click', function () {
+  filterImages('2011');
+});
+filter2010Button.addEventListener('click', function () {
+  filterImages('2010');
+});
+filter2009Button.addEventListener('click', function () {
+  filterImages('2009');
+});
+filter2008Button.addEventListener('click', function () {
+  filterImages('2008');
+});
+filter2007Button.addEventListener('click', function () {
+  filterImages('2007');
+});
+filter2006Button.addEventListener('click', function () {
+  filterImages('2006');
+});
+filter2005Button.addEventListener('click', function () {
+  filterImages('2005');
+});
