@@ -170,32 +170,6 @@ const imageItems = imageContainer.querySelectorAll('.grid-items');
 const dataAvailable = document.querySelector('.data-unavailable');
 const currentButton = document.getElementsByClassName('gallery-button');
 
-const filterImages = function (selectedYear) {
-  let visibleImageItems = 0;
-  imageItems.forEach(function (imageItem) {
-    if (
-      selectedYear === 'all' ||
-      imageItem.getAttribute('data-year') === selectedYear
-    ) {
-      imageItem.style.display = 'block';
-      visibleImageItems += 1;
-    } else {
-      imageItem.style.display = 'none';
-    }
-  });
-  if (visibleImageItems === 0) {
-    dataAvailable.style.display = 'block';
-    // console.log('No images available');
-  } else {
-    dataAvailable.style.display = 'none';
-    // console.log('Images available');
-  }
-};
-
-yearSelect.addEventListener('change', function () {
-  filterImages(this.value);
-});
-
 // Filter By Year Button
 const filterAllButton = document.getElementById('filter-all');
 const filter2023Button = document.getElementById('filter-2023');
@@ -217,6 +191,100 @@ const filter2008Button = document.getElementById('filter-2008');
 const filter2007Button = document.getElementById('filter-2007');
 const filter2006Button = document.getElementById('filter-2006');
 const filter2005Button = document.getElementById('filter-2005');
+
+const allButtons = [
+  filterAllButton,
+  filter2023Button,
+  filter2022Button,
+  filter2021Button,
+  filter2020Button,
+  filter2019Button,
+  filter2018Button,
+  filter2017Button,
+  filter2016Button,
+  filter2015Button,
+  filter2014Button,
+  filter2013Button,
+  filter2012Button,
+  filter2011Button,
+  filter2010Button,
+  filter2009Button,
+  filter2008Button,
+  filter2007Button,
+  filter2006Button,
+  filter2005Button,
+];
+
+const filterImages = function (selectedYear) {
+  let visibleImageItems = 0;
+  imageItems.forEach(function (imageItem) {
+    if (
+      selectedYear === 'all' ||
+      imageItem.getAttribute('data-year') === selectedYear
+    ) {
+      imageItem.style.display = 'block';
+      visibleImageItems += 1;
+    } else {
+      imageItem.style.display = 'none';
+    }
+  });
+
+  allButtons.forEach(function (button) {
+    button.classList.remove('active');
+  });
+
+  if (selectedYear === 'all') {
+    filterAllButton.classList.add('active');
+  } else if (selectedYear === '2023') {
+    filter2023Button.classList.add('active');
+  } else if (selectedYear === '2022') {
+    filter2022Button.classList.add('active');
+  } else if (selectedYear === '2021') {
+    filter2021Button.classList.add('active');
+  } else if (selectedYear === '2020') {
+    filter2020Button.classList.add('active');
+  } else if (selectedYear === '2019') {
+    filter2019Button.classList.add('active');
+  } else if (selectedYear === '2018') {
+    filter2018Button.classList.add('active');
+  } else if (selectedYear === '2017') {
+    filter2017Button.classList.add('active');
+  } else if (selectedYear === '2016') {
+    filter2016Button.classList.add('active');
+  } else if (selectedYear === '2015') {
+    filter2015Button.classList.add('active');
+  } else if (selectedYear === '2014') {
+    filter2014Button.classList.add('active');
+  } else if (selectedYear === '2013') {
+    filter2013Button.classList.add('active');
+  } else if (selectedYear === '2012') {
+    filter2012Button.classList.add('active');
+  } else if (selectedYear === '2011') {
+    filter2011Button.classList.add('active');
+  } else if (selectedYear === '2010') {
+    filter2010Button.classList.add('active');
+  } else if (selectedYear === '2009') {
+    filter2009Button.classList.add('active');
+  } else if (selectedYear === '2008') {
+    filter2008Button.classList.add('active');
+  } else if (selectedYear === '2007') {
+    filter2007Button.classList.add('active');
+  } else if (selectedYear === '2006') {
+    filter2006Button.classList.add('active');
+  } else if (selectedYear === '2005') {
+    filter2005Button.classList.add('active');
+  }
+
+  if (visibleImageItems === 0) {
+    dataAvailable.style.display = 'block';
+  } else {
+    dataAvailable.style.display = 'none';
+  }
+};
+
+yearSelect.addEventListener('change', function () {
+  filterImages(this.value);
+});
 
 filterAllButton.addEventListener('click', function () {
   filterImages('all');
