@@ -1353,6 +1353,7 @@ header nav .container .bars .bar-child.bar-three {
 }
 .gallery-button.active {
   background-color: var(--foundation-primary-700);
+  color: #FFFFFF;
 }
 @media screen and (max-width: 1024px) {
   .gallery-button {
