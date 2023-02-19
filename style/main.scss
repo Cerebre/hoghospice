@@ -65,7 +65,6 @@ header {
     z-index: 20;
     background-color: #FFFFFF;
     box-shadow: 0px 4px 14px rgba(95, 95, 95, 0.05);
-    // display: none;
 
     // Nav Menu Styles
     nav {
@@ -107,7 +106,7 @@ header {
                 width: 70%;
                 display: flex;
                 align-items: center;
-                justify-content: end;
+                justify-content: flex-end;
 
                 @media screen and (max-width: 768px) {
                     position: fixed;
@@ -271,6 +270,7 @@ header {
     display: grid;
     place-items: end;
     background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../assets/images/Home\ Page\ hero\ image.png');
+    background-position: center center;
     background-size: cover;
     background-repeat: none;
 
@@ -288,6 +288,19 @@ header {
 
         .org-number {
             color: #FFFFFF;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        place-items: center;
+        min-height: 70vh;
+
+        .display-base-bold {
+            font-size: 24px;
+        }
+
+        .body-base-regular {
+            @include body-small-regular();
         }
     }
 }
@@ -309,6 +322,7 @@ header {
 #about {
     .heading-two-bold {
         color: var(--foundation-grey-500);
+
     }
 
     .body-base-regular,
@@ -319,6 +333,39 @@ header {
     .body-base-semibold {
         color: var(--foundation-secondary-600);
     }
+
+    @media screen and (max-width: 768px) {
+        .heading-two-bold {
+            font-size: 20px;
+        }
+
+        .body-base-regular {
+            @include body-small-regular();
+        }
+
+        .heading-five-semibold {
+            @include body-base-semibold();
+            margin-bottom: 8px !important;
+        }
+
+        .body-small-regular {
+            @include caption-base-regular();
+            margin-bottom: 8px !important;
+        }
+
+        .body-base-semibold {
+            @include body-small-semibold();
+        }
+
+        span {
+            margin-bottom: 8px !important;
+        }
+
+        img {
+            width: 32px;
+            height: 32px;
+        }
+    }
 }
 
 // Build Together Styles
@@ -327,6 +374,21 @@ header {
     display: grid;
     place-items: center;
     background: rgba(251, 247, 240, 0.7);
+
+    @media screen and (max-width: 768px) {
+        .build-together-img {
+            width: 305px;
+            height: auto;
+        }
+
+        .heading-two-bold {
+            font-size: 20px;
+        }
+
+        .body-base-regular {
+            @include body-small-regular();
+        }
+    }
 }
 
 // Testimonial Stories
@@ -389,66 +451,33 @@ header {
         }
     }
 
-}
+    @media screen and (max-width: 768px) {
+        .body-large-semibold {
+            @include body-small-semibold();
+        }
 
-// Footer Design Styles
-#footer {
-    min-height: 50vh;
-    display: grid;
-    place-items: center;
-
-    .container {
-        border-color: rgba(0, 0, 0, 0.2);
+        .heading-three-bold {
+            @include body-large-bold();
+        }
 
         .body-base-regular {
-            color: var(--foundation-grey-300);
+            @include body-small-regular();
+        }
+
+        .heading-six-semibold {
+            @include body-base-semibold();
+        }
+
+        span.body-base-regular {
+            @include caption-base-regular();
+        }
+
+        .body-small-regular {
+            @include caption-base-regular();
+            display: block !important;
         }
     }
 
-    // Subscription Form
-    .sub-form {
-        position: relative;
-
-        #subscriber {
-            padding: 16px 10px;
-
-            &::placeholder {
-                font-size: 14px;
-                color: #959696;
-            }
-        }
-
-        .hog-button-subscribe {
-            position: absolute;
-            top: 8px;
-            right: 8px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 10px 16px;
-            color: #FFFFFF;
-            @include body-small-semibold();
-            background: var(--foundation-grey-500);
-            border-radius: 5px;
-            border: none;
-        }
-    }
-
-    // Help Links
-    .help-links {
-        padding-left: 0;
-        list-style: none;
-
-        .links-within-list {
-            margin: 20px 0;
-
-            a {
-                text-decoration: none;
-                color: var(--foundation-grey-400);
-                @include body-base-regular();
-            }
-        }
-    }
 }
 
 // Contact Us Page
@@ -1208,4 +1237,15 @@ header {
 
 .data-unavailable {
     display: none;
+}
+
+// Slider Home
+.swiper-slide {
+    width: 100%;
+    margin-right: 0 !important;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
 }
