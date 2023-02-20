@@ -159,6 +159,11 @@
     &:hover {
         color: var(--foundation-primary-700);
     }
+
+    @media screen and (max-width: 768px) {
+        padding: 13px 20px;
+        @include body-small-regular();
+    }
 }
 
 .about-button {

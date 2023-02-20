@@ -199,6 +199,14 @@
 .testimonial-button:hover {
   color: var(--foundation-primary-700);
 }
+@media screen and (max-width: 768px) {
+  .testimonial-button {
+    padding: 13px 20px;
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+  }
+}
 
 .about-button {
   text-decoration: none;
@@ -1733,6 +1741,26 @@ header nav .container .bars .bar-child.bar-three {
 #testimonial-story-container .heading-three-bold {
   color: var(--foundation-grey-500);
 }
+@media screen and (max-width: 768px) {
+  #testimonial-hero .body-small-semibold,
+  #testimonial-story-container .body-small-semibold {
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 600;
+  }
+  #testimonial-hero .heading-three-bold,
+  #testimonial-story-container .heading-three-bold {
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 700;
+  }
+  #testimonial-hero .heading-six-regular,
+  #testimonial-story-container .heading-six-regular {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+  }
+}
 
 .testimonial-card {
   background: #FFFFFF;
@@ -1759,13 +1787,48 @@ header nav .container .bars .bar-child.bar-three {
 .testimonial-card #testimonial-post-details .body-small-semibold {
   color: var(--foundation-grey-800);
 }
+@media screen and (max-width: 768px) {
+  .testimonial-card {
+    padding: 12px;
+  }
+  .testimonial-card .body-small-regular {
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 400;
+  }
+  .testimonial-card .body-small-semibold {
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 600;
+  }
+  .testimonial-card .heading-six-semibold {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 600;
+    height: 44px;
+  }
+}
 
 #testimonial-stories .heading-three-semibold {
   color: var(--foundation-grey-500);
 }
+@media screen and (max-width: 768px) {
+  #testimonial-stories .heading-three-semibold {
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 600;
+  }
+}
 
-#vhr .heading-five-semibold {
+#vhr .heading-five-bold {
   color: var(--foundation-grey-500);
+}
+@media screen and (max-width: 768px) {
+  #vhr .heading-five-bold {
+    font-size: 18px;
+    line-height: 160%;
+    font-weight: 700;
+  }
 }
 #vhr #left-vhr tr {
   margin-top: 24px;
@@ -1783,6 +1846,18 @@ header nav .container .bars .bar-child.bar-three {
   font-weight: 400;
   color: var(--foundation-grey-400);
 }
+@media screen and (max-width: 768px) {
+  #vhr #left-vhr tr th {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 600;
+  }
+  #vhr #left-vhr tr td {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+  }
+}
 #vhr #left-vhr .table > :not(caption) > * > * {
   padding: 0.5rem 0rem;
 }
@@ -1798,6 +1873,13 @@ header nav .container .bars .bar-child.bar-three {
 #vhr #right-vhr .rules li {
   margin: 16px 0;
 }
+@media screen and (max-width: 768px) {
+  #vhr #right-vhr .body-base-regular {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+  }
+}
 
 #gallery-hero .body-small-semibold {
   color: var(--foundation-primary-700);
@@ -1809,6 +1891,25 @@ header nav .container .bars .bar-child.bar-three {
 }
 #gallery-hero .heading-six-regular {
   margin-bottom: 16px;
+}
+@media screen and (max-width: 768px) {
+  #gallery-hero .body-small-semibold {
+    font-size: 12px;
+    line-height: 160%;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  #gallery-hero .heading-three-bold {
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  #gallery-hero .body-base-regular {
+    font-size: 14px;
+    line-height: 160%;
+    font-weight: 400;
+  }
 }
 
 #gallery label {

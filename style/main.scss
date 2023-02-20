@@ -1347,6 +1347,20 @@ header {
     .heading-three-bold {
         color: var(--foundation-grey-500);
     }
+
+    @media screen and (max-width: 768px) {
+        .body-small-semibold {
+            @include caption-base-semibold();
+        }
+
+        .heading-three-bold {
+            @include heading-five-bold();
+        }
+
+        .heading-six-regular {
+            @include body-small-regular();
+        }
+    }
 }
 
 .testimonial-card {
@@ -1381,11 +1395,35 @@ header {
         }
     }
 
+    @media screen and (max-width: 768px) {
+        padding: 12px;
+
+        .body-small-regular {
+            @include caption-base-regular();
+        }
+
+        .body-small-semibold {
+            @include caption-base-semibold();
+        }
+
+        .heading-six-semibold {
+            @include body-small-semibold();
+            height: 44px;
+        }
+    }
+
 }
 
 #testimonial-stories {
     .heading-three-semibold {
         color: var(--foundation-grey-500);
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .heading-three-semibold {
+            @include heading-six-semibold();
+        }
     }
 }
 
@@ -1429,8 +1467,12 @@ header {
 // }
 
 #vhr {
-    .heading-five-semibold {
+    .heading-five-bold {
         color: var(--foundation-grey-500);
+
+        @media screen and (max-width: 768px) {
+            @include body-large-bold();
+        }
     }
 
     // Left Side of VHR
@@ -1448,11 +1490,22 @@ header {
                 @include body-base-regular();
                 color: var(--foundation-grey-400);
             }
+
+            @media screen and (max-width: 768px) {
+                th {
+                    @include body-small-semibold()
+                }
+
+                td {
+                    @include body-small-regular();
+                }
+            }
         }
 
         .table>:not(caption)>*>* {
             padding: 0.5rem 0rem
         }
+
     }
 
     // Right Side of VHR
@@ -1467,6 +1520,12 @@ header {
 
             li {
                 margin: 16px 0;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .body-base-regular {
+                @include body-small-regular();
             }
         }
     }
@@ -1488,6 +1547,21 @@ header {
         margin-bottom: 16px;
     }
 
+    @media screen and (max-width: 768px) {
+        .body-small-semibold {
+            @include caption-base-semibold();
+            margin-bottom: 8px;
+        }
+
+        .heading-three-bold {
+            @include heading-five-bold();
+            margin-bottom: 8px;
+        }
+
+        .body-base-regular {
+            @include body-small-regular();
+        }
+    }
 }
 
 #gallery {
