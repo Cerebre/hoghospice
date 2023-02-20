@@ -969,6 +969,10 @@ header {
             background-position: center center;
             padding: 40px 40px 0 40px;
 
+            .heading-three-bold {
+                color: #FFFFFF;
+            }
+
             @media screen and (max-width: 768px) {
                 height: 65vh;
                 border-radius: 10px 10px 0px 0px;

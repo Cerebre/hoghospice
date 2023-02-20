@@ -1369,6 +1369,9 @@ header nav .container .bars .bar-child.bar-three {
   background-position: center center;
   padding: 40px 40px 0 40px;
 }
+.volunteer .container .volunteer-intro .heading-three-bold {
+  color: #FFFFFF;
+}
 @media screen and (max-width: 768px) {
   .volunteer .container .volunteer-intro {
     height: 65vh;
