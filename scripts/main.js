@@ -75,7 +75,7 @@ if (barControl) {
         // opacity: 0,
       });
       gsap.to('.menu', {
-        right: '0',
+        left: '0',
       });
       gsap.to('body', {
         overflow: 'hidden',
@@ -97,7 +97,7 @@ if (barControl) {
         scale: '1',
       });
       gsap.to('.menu', {
-        right: '-100%',
+        left: '-100%',
       });
       gsap.to('body', {
         overflow: 'scroll',

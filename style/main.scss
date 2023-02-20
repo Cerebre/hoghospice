@@ -58,6 +58,7 @@ body {
     --foundation-grey-50: #EAEAEA;
 }
 
+// Header > Navbar
 header {
     position: sticky;
     top: 0;
@@ -111,12 +112,12 @@ header {
                 @media screen and (max-width: 768px) {
                     position: fixed;
                     flex-direction: column;
-                    align-items: flex-end;
+                    align-items: flex-start;
                     top: 0;
-                    right: -100%;
+                    left: -100%;
                     width: 100%;
                     min-height: 100vh;
-                    background-color: rgba(0, 0, 0, 0.3);
+                    background-color: rgba(0, 0, 0, 0.5);
                 }
 
                 .logo-menu-mobile {
@@ -145,7 +146,7 @@ header {
                     }
 
                     @media screen and (max-width: 500px) {
-                        width: 85%;
+                        width: 100%;
                     }
                 }
 
@@ -217,7 +218,7 @@ header {
                     }
 
                     @media screen and (max-width: 500px) {
-                        width: 85%;
+                        width: 100%;
                     }
                 }
             }
@@ -228,8 +229,8 @@ header {
                 position: relative;
                 overflow: hidden;
                 cursor: pointer;
-                // background-color: #FFFFFF;
                 display: none;
+                z-index: 500;
 
                 @media screen and (max-width: 768px) {
                     display: block;
@@ -244,7 +245,7 @@ header {
                     left: 50%;
                     transform: translateX(-50%);
                     background-color: var(--foundation-grey-500);
-                    border: 1.4px solid var(--foundation-grey-500);
+                    border: 1.4px solid var(--foundation-primary-500);
 
                     &.bar-one {
                         top: 25%;
@@ -504,6 +505,24 @@ header {
         }
     }
 
+    @media screen and (max-width: 768px) {
+        .body-small-semibold {
+            @include caption-base-semibold();
+        }
+
+        .heading-two-bold {
+            @include heading-five-bold();
+        }
+
+        .heading-six-regular {
+            @include body-small-regular();
+        }
+
+        .heading-six-semibold {
+            @include body-small-semibold();
+        }
+    }
+
 }
 
 // Map Section Styling
@@ -518,20 +537,16 @@ header {
         display: flex;
         align-items: center;
         justify-content: center;
+    }
 
-        // .directions-button {
-        //     display: flex;
-        //     flex-direction: row;
-        //     justify-content: center;
-        //     align-items: center;
-        //     padding: 13px 26px;
-        //     gap: 10px;
-        //     border-radius: 10px;
-        //     background-color: var(--foundation-secondary-500);
-        //     @include body-base-semibold();
-        //     text-decoration: none;
-        //     color: #FFFFFF;
-        // }
+    @media screen and (max-width:768px) {
+        .heading-three-bold {
+            @include heading-five-bold();
+        }
+
+        .heading-six-regular {
+            @include body-small-regular();
+        }
     }
 }
 
@@ -560,6 +575,13 @@ header {
                 border-radius: 50%;
                 top: 9%;
                 left: 85.8%;
+
+                @media screen and (max-width: 768px) {
+                    width: 12px;
+                    height: 12px;
+                    top: 9%;
+                    left: 94%;
+                }
             }
 
             &.floating-element-blue {
@@ -569,6 +591,11 @@ header {
                 border-radius: 50%;
                 top: 25%;
                 left: 15%;
+
+                @media screen and (max-width: 768px) {
+                    width: 12px;
+                    height: 12px;
+                }
             }
 
             &.floating-element-green {
@@ -578,6 +605,12 @@ header {
                 border-radius: 50%;
                 top: 40%;
                 left: 70.5%;
+
+                @media screen and (max-width: 768px) {
+                    width: 29px;
+                    height: 28px;
+                    left: 88%;
+                }
             }
 
             &.floating-element-faded-pink {
@@ -587,6 +620,13 @@ header {
                 border-radius: 50%;
                 top: 80%;
                 left: 59.3%;
+
+                @media screen and (max-width: 768px) {
+                    width: 64px;
+                    height: 64px;
+                    top: 86%;
+                    left: 72%;
+                }
             }
 
             &.floating-element-crown {
@@ -594,6 +634,10 @@ header {
                 height: 117px;
                 top: 42%;
                 left: 32%;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                }
             }
         }
 
@@ -603,6 +647,21 @@ header {
         }
     }
 
+    @media screen and (max-width: 768px) {
+        min-height: 85vh;
+
+        .heading-two-bold {
+            @include heading-five-bold();
+        }
+
+        .heading-six-regular {
+            @include body-small-regular();
+        }
+
+        .hog-button {
+            width: auto;
+        }
+    }
 }
 
 // About Values
@@ -619,6 +678,29 @@ header {
     .body-base-regular,
     .body-small-regular {
         color: var(--foundation-grey-300);
+    }
+
+    @media screen and (max-width: 768px) {
+        .heading-five-bold {
+            @include body-base-bold();
+        }
+
+        .body-base-regular {
+            @include body-small-regular();
+        }
+
+        .body-small-regular {
+            @include caption-base-regular();
+        }
+
+        .body-large-semibold {
+            @include body-small-semibold();
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
     }
 }
 
@@ -725,6 +807,29 @@ header {
             width: 80%;
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .body-large-semibold {
+            @include body-small-semibold();
+        }
+
+        .heading-five-bold {
+            @include body-base-bold();
+        }
+
+        .body-large-regular {
+            @include body-small-regular();
+        }
+
+        .body-large-bold {
+            @include body-small-bold();
+        }
+
+        .body-small-regular {
+            @include caption-base-regular();
+        }
+
+    }
 }
 
 // About Visions
@@ -735,6 +840,16 @@ header {
 
     .heading-five-bold {
         color: var(--foundation-grey-500);
+    }
+
+    @media screen and (max-width: 768px) {
+        .body-base-regular {
+            @include body-small-regular();
+        }
+
+        .heading-five-bold {
+            @include body-base-bold();
+        }
     }
 }
 
@@ -756,8 +871,18 @@ header {
         min-height: 70vh;
     }
 
-    .body-small-semibold {
-        text-transform: uppercase;
+    @media screen and (max-width: 768px) {
+        .display-base-bold {
+            @include heading-five-bold();
+        }
+
+        .body-base-regular {
+            @include body-small-regular();
+        }
+
+        .body-base-semibold {
+            @include body-small-semibold();
+        }
     }
 }
 
@@ -774,8 +899,24 @@ header {
         border-radius: 10px;
         text-align: center;
 
+        .body-large-semibold {
+            color: var(--foundation-grey-500);
+        }
+
         @media screen and (max-width: 1440px) {
             height: 250px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding: 22px 16px 20px 16px;
+
+            .body-large-semibold {
+                @include body-base-semibold();
+            }
+
+            .body-small-regular {
+                @include caption-base-regular();
+            }
         }
 
         .custom-card-img {
@@ -783,6 +924,30 @@ header {
             top: 0;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            @media screen and (max-width: 768px) {
+                width: 34px;
+                height: 34px;
+            }
+        }
+    }
+
+    .body-small-semibold {
+        text-transform: uppercase;
+        color: var(--foundation-primary-600);
+    }
+
+    .heading-five-bold {
+        color: var(--foundation-grey-500);
+    }
+
+    @media screen and (max-width: 768px) {
+        .body-small-semibold {
+            @include caption-base-semibold();
+        }
+
+        .heading-five-bold {
+            @include body-base-bold();
         }
     }
 }
@@ -793,6 +958,10 @@ header {
         background-color: #FFFFFF;
         border-radius: 10px;
         box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.02);
+
+        .heading-three-bold {
+            color: var(--foundation-grey-500);
+        }
 
         .volunteer-intro {
             background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../assets/images/Volunteer\ form\ -\ Image.png');
@@ -808,10 +977,22 @@ header {
 
         .volunteer-form {
             background-color: #FFFFFF;
-            padding: 40px 40px 40px 40px;
+            padding: 40px;
 
             @media screen and (max-width: 768px) {
-                padding: 28px 28px 28px 28px;
+                padding: 20px;
+            }
+        }
+
+        @media screen and (max-width:768px) {
+            box-shadow: 4px 4px 14px rgba(55, 55, 55, 0.05);
+
+            .heading-three-bold {
+                @include heading-five-bold();
+            }
+
+            .body-base-regular {
+                @include body-small-regular();
             }
         }
     }
@@ -841,6 +1022,10 @@ header {
         min-height: 60vh;
     }
 
+    @media screen and (max-width: 768px) {
+        min-height: 65vh;
+    }
+
     .floating-image {
         position: absolute;
         left: -57px;
@@ -855,6 +1040,36 @@ header {
 
         @media screen and (max-width: 768px) {
             display: none;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .display-base-bold {
+            @include heading-five-bold();
+        }
+
+        .body-base-regular {
+            @include body-small-regular();
+        }
+
+        .hog-button {
+            width: initial;
+        }
+    }
+}
+
+.donation-needs {
+    .heading-five-bold {
+        color: var(--foundation-grey-500);
+    }
+
+    @media screen and (max-width: 768px) {
+        .heading-five-bold {
+            @include body-base-bold();
+        }
+
+        .body-base-regular {
+            @include body-small-regular();
         }
     }
 }
@@ -964,6 +1179,33 @@ header {
     .body-base-semibold {
         color: var(--foundation-grey-500);
     }
+
+    @media screen and (max-width: 768px) {
+
+        .heading-five-regular {
+            @include body-base-regular();
+        }
+
+        .body-base-semibold {
+            @include body-small-semibold();
+        }
+
+        .body-small-regular {
+            @include caption-base-regular();
+        }
+    }
+}
+
+#clientele {
+    .body-base-semibold {
+        color: var(--foundation-primary-700);
+    }
+
+    @media screen and (max-width: 768px) {
+        .body-base-semibold {
+            @include body-small-semibold();
+        }
+    }
 }
 
 // Inner Donate
@@ -988,6 +1230,14 @@ header {
     box-shadow: 0px 15px 25px rgba(57, 53, 53, 0.03);
     border-radius: 10px;
     padding: 28px;
+
+    .heading-two-bold {
+        color: var(--foundation-grey-500);
+
+        @media screen and (max-width: 1024px) {
+            @include heading-four-bold();
+        }
+    }
 }
 
 .donation-card-transfer {
@@ -1001,6 +1251,22 @@ header {
 
         .body-base-semibold {
             color: var(--foundation-grey-500);
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        box-shadow: 0px 15px 25px rgba(55, 55, 55, 0.03);
+
+        .body-large-semibold {
+            @include body-base-semibold();
+        }
+
+        .body-base-regular {
+            @include body-small-regular
+        }
+
+        .body-base-semibold {
+            @include body-small-semibold()
         }
     }
 }
@@ -1030,16 +1296,37 @@ header {
 
         }
     }
+
+    .heading-one-bold {
+        color: var(--foundation-grey-500);
+    }
+
+    @media screen and (max-width: 768px) {
+        .heading-one-bold {
+            @include heading-five-bold();
+        }
+    }
 }
 
 .donation-details {
     .body-base-regular {
         color: var(--foundation-grey-300);
 
-        span {
+        .body-base-semibold {
             color: var(--foundation-grey-500);
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .body-base-regular {
+            @include body-small-regular()
+        }
+
+        .body-base-semibold {
+            @include body-small-semibold();
+        }
+    }
+
 }
 
 #donation-category {
