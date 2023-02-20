@@ -114,8 +114,8 @@ if (mq.matches) {
 
   for (let i = 0; i < shortTitle.length; i++) {
     let shortTitles = shortTitle[i];
-    if (shortTitles.innerText.length > 46) {
-      shortTitles.innerText = shortTitles.innerText.substring(0, 46) + '...';
+    if (shortTitles.innerText.length > 43) {
+      shortTitles.innerText = shortTitles.innerText.substring(0, 43) + '...';
     }
   }
 
