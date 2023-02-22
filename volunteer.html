@@ -226,24 +226,25 @@
                             <div class="volunteer-form">
                                 <h3 class="heading-three-bold">Volunteer form</h3>
                                 <!-- Form -->
-                                <form name="contact" class="form" id="myForm">
+                                <form name="contact" class="form" method="post" action="form-handler.php">
                                     <div class="row">
                                         <!-- FirstName -->
                                         <div class="col-lg-6 col-6 my-2">
                                             <label for="firstname" class="form-label">First name</label>
                                             <input type="text" class="form-control input-style" placeholder="First name"
-                                                aria-label="First name" id="firstname" required />
+                                                aria-label="First name" id="firstname" name="firstname" required />
                                         </div>
                                         <!-- LastName -->
                                         <div class="col-lg-6 col-6 my-2">
                                             <label for="lastname" class="form-label">Last name</label>
                                             <input type="text" class="form-control input-style" placeholder="Last name"
-                                                aria-label="Last name" id="lastname" required />
+                                                aria-label="Last name" id="lastname" name="lastname" required />
                                         </div>
                                         <!-- Gender -->
                                         <div class="col-md-6 my-2">
                                             <label for="gender" class="form-label">Gender</label>
-                                            <select class="form-select input-style" aria-label="gender" id="gender">
+                                            <select class="form-select input-style" aria-label="gender" id="gender"
+                                                name="gender">
                                                 <option selected>Select gender</option>
                                                 <option value="male">Male</option>
                                                 <option value="female">Female</option>
@@ -253,20 +254,22 @@
                                         <div class="col-md-6 my-2">
                                             <label for="phone-number" class="form-label">Phone Number</label>
                                             <input type="tel" class="form-control country-code-input input-style"
-                                                id="phone-number" placeholder="701 039 8936" required />
+                                                id="phone_number" name="phone_number" placeholder="701 039 8936"
+                                                required />
                                         </div>
                                         <!-- E-mail Address-->
                                         <div class="col-md-12 my-2">
                                             <label for="email" class="form-label">Email</label>
                                             <input type="text" class="form-control input-style"
                                                 placeholder="example@email.com" aria-label="Email" id="email"
-                                                required />
+                                                name="email" required />
                                         </div>
                                         <!-- Message-->
                                         <div class="col-md-12 my-2">
                                             <label for="message" class="form-label">Why would you like to volunteer?
                                                 <span class="optional-text">(optional)</span></label>
-                                            <textarea class="form-control" id="message" rows="5"></textarea>
+                                            <textarea class="form-control" id="message" name="message"
+                                                rows="5"></textarea>
                                         </div>
                                         <!-- Submit Button -->
                                         <button class="hog-button hog-button-gold my-2" type="submit">
